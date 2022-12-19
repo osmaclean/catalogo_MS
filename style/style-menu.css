@@ -4,86 +4,77 @@
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
     transition: 0.3s;
-
 }
 
 a:hover {
-    color: aliceblue;
     opacity: 0.7;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-transform: uppercase;
     letter-spacing: 4px;
-
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, Helvetica, sans-serif;
-    background: #a8a8a8;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #23232e;
     height: 8vh;
 }
 
-
-
 main {
-    background: url("bg.jpg") no-repeat center center;
+    background: url(back.jpg) no-repeat center center;
     background-size: cover;
     height: 92vh;
-
-
 }
 
-.nav_list {
+.nav-list {
     list-style: none;
     display: flex;
-    font-size: 20px;
+    align-items: center;
+
 }
 
-.nav_list li {
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+ 
 }
 
 .mobile-menu {
     display: none;
     cursor: pointer;
+    
 }
-
 
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #000;
+    background-color: #fff;
     margin: 8px;
     transition: 0.3s;
+    
 }
 
-
+/* Menu depois que ativa o modo Mobile */
 @media (max-width: 999px) {
 
-    /* Se algo transborda fica escondido do Body (logo não temos o scroll vertical) */
+
+    /* Faz sumir o scroll vertical */
     body {
         overflow-x: hidden;
     }
 
-    .nav_list {
+    .nav-list {
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vw;
         height: 92vh;
-        background-color: #a8a8a8;
+        background-color: #23232e;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -92,53 +83,46 @@ main {
     }
 
 
-    .nav_list li {
+    /* Deixa os itens corretamente no centro e faz sumir o menu*/
+    .nav-list li {
         margin-left: 0;
         opacity: 0;
     }
 
-
     .mobile-menu {
         display: block;
     }
-
 }
 
-
-.nav_list.active {
+.nav-list.active {
     transform: translateX(0);
 }
 
-
 @keyframes navLinkFade {
+
+    /* Opacidade do menu, aqui ele aparece */
     from {
         opacity: 0;
         transform: translateX(50px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
     }
-
 }
 
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
-    
+
 }
 
 .mobile-menu.active .line2 {
     opacity: 0;
+
 }
 
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+
 }
-
-
-
-
-
-
 
