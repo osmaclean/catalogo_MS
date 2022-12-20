@@ -1,4 +1,5 @@
 * {
+
     margin: 0;
     padding: 0;
 }
@@ -35,7 +36,7 @@ nav {
 main {
     background: url(back111.jpg) no-repeat center center ;
     background-size: cover;
-    height: 92vh;
+    height: 100%;
 }
 
 .nav-list {
@@ -65,7 +66,7 @@ main {
 }
 
 /* Menu depois que ativa o modo Mobile */
-@media (max-width: 1229px) {
+@media (max-width: 999px) {
 
 
     /* Faz sumir o scroll vertical */
