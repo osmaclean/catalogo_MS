@@ -5,14 +5,57 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    width: 200px;
-    height: 30vh;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.box img {
+    width: 300px;
     border-radius: 10px;
 }
 
+.box h2 {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.box p {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box span {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.box button {
+    font-size: 17px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box button:hover {
+    background-color: black;
+    color: aliceblue;
+}
 
 
+.camiseta {
+    color: aliceblue;
+    padding: 50px 0px 10px 0px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
