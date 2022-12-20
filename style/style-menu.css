@@ -16,6 +16,8 @@ a:hover {
 
 .logo {
     letter-spacing: 4px;
+    margin-top: 13px;
+    margin-right: 500px;
 }
 
 .back {
@@ -27,7 +29,7 @@ nav {
     justify-content: space-around;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background-color: #23232e;
-    height: 10vh;
+    height: 80px;
 }
 
 main {
@@ -63,7 +65,7 @@ main {
 }
 
 /* Menu depois que ativa o modo Mobile */
-@media (max-width: 999px) {
+@media (max-width: 1229px) {
 
 
     /* Faz sumir o scroll vertical */

@@ -1,5 +1,7 @@
 
-
+let arrayItens = [
+    {id: "camisetas", nome: "Camiseta "},
+]
 
 
 
